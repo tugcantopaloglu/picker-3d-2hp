@@ -49,7 +49,7 @@ public class CounterManager : MonoBehaviour
 
     void Start()
     {
-        _counter = GameObject.FindGameObjectsWithTag("Checkpoint");
+        _counter = GameObject.FindGameObjectsWithTag("Counter");
         Array.Sort(_counter, CompareObNames);
 
 
@@ -68,7 +68,7 @@ public class CounterManager : MonoBehaviour
 
         if (completeCounting)
         {
-            _counterNeedsObject = _counter[_whichCounter].GetComponent<CounterManager>()._counterNeedsObject;
+            _counterNeedsObject = _counter[_whichCounter].GetComponent<CounterPrefabManager>().CounterNeedsObject;
             if (_objectCount >= _counterNeedsObject)
             {
                 StartCoroutine(CounterSuccess());

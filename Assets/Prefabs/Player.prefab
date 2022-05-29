@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c493a32ab7d444abb95f87ec3bd95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _turningTrigger: {fileID: 0}
+  _frontCollider: {fileID: 8787535836828490359}
 --- !u!1 &1317740034481455603
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 //this script pushes object to the counter
 public class PlayerBackCollider : MonoBehaviour
 {
-    [SerializeField] private GameObject _turningTrigger;
+    [SerializeField] private GameObject _frontCollider;
     private Vector3 _startPos;
     private bool _isRestart = false;
 
@@ -20,7 +20,7 @@ public class PlayerBackCollider : MonoBehaviour
     {
         if (MouseMovement.Instance.ForwardSpeed == 0)
         {
-            transform.position = Vector3.MoveTowards(transform.position, _turningTrigger.transform.position, Time.fixedDeltaTime * 1f);
+            transform.position = Vector3.MoveTowards(transform.position, _frontCollider.transform.position, Time.fixedDeltaTime * 1f);
             _isRestart = true;
         }
 

@@ -11,6 +11,7 @@ public class Stop : MonoBehaviour
         {
             MouseMovement.Instance.ForwardSpeed = 0;
             MouseMovement.Instance.MouseSpeed = 0;
+            this.gameObject.SetActive(false);
         }
     }
 }

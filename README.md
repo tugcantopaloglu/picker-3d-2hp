@@ -8,5 +8,5 @@
  -Restart game button is working but game does not restart because of the same issue as mentioned before.   
  
  Used Assets:   
- -DOTween (http://dotween.demigiant.com/)
+ -DOTween (http://dotween.demigiant.com/)   
  Check out game site!: tugcantopaloglu.itch.io/picker-3d-clone
